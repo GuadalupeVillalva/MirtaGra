@@ -1,0 +1,183 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; }
+
+body {
+    background: rgb(130,91,235);
+    background: linear-gradient(180deg, rgba(130,91,235,1) 0%, rgba(130,91,235,1) 50%, rgba(165,154,195,1) 100%);
+    size: 100%;
+}    
+
+/* Nav */
+.navHeader {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    grid-area: navHeader;
+    background-color: #825beb;
+}
+
+#navHeader__index {
+    background-color:#815beb00;
+}
+
+.navHeader ul {
+    display: flex;
+    justify-content: space-around;
+}
+.navHeader li {
+    margin: 1rem 0.60rem 0rem 0.50rem;
+    font-family: 'Scada', sans-serif;
+    font-weight: bold;
+}
+
+.navHeader a {
+    color: #1E1E1E;
+}
+.navHeader__icon img {
+    height: 2.50rem;
+    margin-top: 0.50rem;
+    margin-left: 0.50rem;
+}
+/* fin Nav */
+
+main {
+    grid-area: main;
+}
+/* footer */
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+footer a {
+    margin:0rem 0.40rem;
+}
+
+/* INDEX */
+#body__index, #body__tratamientos {
+    display: grid;
+    grid-template-areas:
+                    "navHeader"
+                    "main"
+                    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: repeat( 3, auto);
+}
+
+.main__title {
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    padding-top: 9rem;
+    padding-bottom: 1rem;
+}
+
+.secondary__title {
+    text-align: center;
+}
+
+.secondary__title h3 {
+    font-family: 'Signika', sans-serif;
+    margin-top: 4rem;
+}
+
+.secondary__title p {
+    font-family: 'Scada', sans-serif;
+    margin: 1rem 0.50rem;
+}
+
+.main__title h1, .main__title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #1E1E1E;
+    font-size: 2em;
+    margin-left: 1rem;
+}
+
+.main__title h2 {
+    margin-left: 2rem;
+}
+
+/* TRATAMIENTOS */
+#main__tratamientos {
+    margin-top: 6rem;
+}
+
+#main__tratamientos h1 {
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.div__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    background-color: #F6FFFE;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.562) 0px 7px 29px 0px;
+}
+
+.card h2 {
+    font-family: 'Signika', sans-serif;
+}
+
+.card p {
+    font-family: 'Scada', sans-serif;
+    margin: 0.50rem 1rem;
+}
+
+.card img{
+    height: 60px;
+}
+
+/* TURNOS */
+#main__turnos {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+
+.div__turnos h1 {
+    font-family: 'Signika', sans-serif;
+}
+
+.div__turnos p {
+    font-family: 'Scada', sans-serif;
+    margin: 1rem;
+}
+
+.div__turnos-img img{
+    height: 180px;
+    margin: 6rem 0.50rem 1rem 0.50rem;
+}
+
+.div__turnos-input {
+    display: flex;
+    justify-content: center;
+}
+
+.div__turnos-input input {
+    display: flex;
+    flex-direction: column;
+    padding: 0.50rem;
+    margin: 1rem;
+    border-radius: 12px;
+    border-color: #1E1E1E;
+    border-width: 1.5px;
+}
